@@ -6,11 +6,11 @@ from view.sepatu import view_pendaftaran
 class process_pendaftaran:
     def validate_nama(nama):
         if not nama.isalpha():
-            raise ValueError("Nama hanya boleh berisi huruf.")
+            raise ValueError("nama hanya boleh berisi huruf.")
         
     def validate_brand(brand):
         if not brand.isalpha():
-            raise ValueError("nama brand hanya boleh berisi angka.")
+            raise ValueError("nama brand hanya boleh berisi huruf.")
 
     def validate_ukuran(ukuran):
         if not ukuran.isdigit():
